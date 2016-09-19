@@ -1,0 +1,83 @@
+/*My Profile*/
+.eck-card-profile-image, .eck-card-wide-image{
+    height:250px;
+    width:100%;
+}
+.eck-experience-list{
+    padding-top:0;
+    padding-bottom:0;
+    min-height:30px;
+}
+/*Company Information Tabs*/
+.eck-is-active {
+    opacity: 1;
+    border-bottom:3px solid;
+    border-bottom-color: rgb(68,138,255);
+}
+.eck-company-tabs{
+    cursor: pointer;
+}
+/*PROJECTS IVE WORKED ON*/
+.eck-transparent-overlay{
+    opacity:0;
+    -o-transition:      color .5s ease-out, background .5s ease-in;
+    -ms-transition:     color .5s ease-out, background .5s ease-in;
+    -moz-transition:    color .5s ease-out, background .5s ease-in;
+    -webkit-transition: color .5s ease-out, background .5s ease-in;
+    transition:         color .5s ease-out, background .5s ease-in;
+}
+.eck-card-logo-container:hover .eck-transparent-overlay{
+    opacity:1;
+    color:rgb(255,255,255);
+    background-color: rgba(0,0,0,.85);
+}
+/*IMAGES*/
+.eck-card-portrait-image{
+    background:url('./images/profile_portrait.jpg');
+    background-size: 275px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.eck-card-ladb-logo-image{
+    background:url('./images/ladb_logo_small.png');
+    background-color:#000000;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.eck-card-screeningnow-logo-image{
+    background:url('./images/screeningnow_logo.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.eck-card-neybortalk-logo-image{
+    background:url('./images/neybortalk_logo.png');
+    background-color:#9632fa;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.eck-card-naya-logo-image{
+    background:url('./images/naya_logo.png');
+    background-size: 175px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.eck-card-notary-logo-image{
+    background:url('./images/notarycam_logo.png');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.eck-card-portal-logo-image{
+    background:url('./images/portal_logo.png');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}

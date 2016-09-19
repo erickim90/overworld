@@ -1,0 +1,19 @@
+.mdl-grid-width         {  max-width:900px;  }
+.min-height-300         {  min-height:300px;  }
+.min-height-400         {  min-height:400px;  }
+.min-height-500         {  min-height:500px;  }
+.min-height-600         {  min-height:600px;  }
+.padding-0              {  padding:0; }
+.padding-top-0          {  padding-top:0;  }
+.padding-bottom-0       {  padding-bottom:0;  }
+.margin-0               {  margin:0;  }
+.margin-top-0           {  margin-top:0;  }
+.margin-bottom-0        {  margin-bottom:0;  }
+.cursor-pointer         {  cursor: pointer; }
+
+.width-percent-100      {  width:100% !important;  }
+.background-color-white {  background-color:white !important;  }
+.background-color-black {  background-color:black !important;  }
+.text-color-white       {  color:white !important;  }
+.text-color-black       {  color:black !important;  }
+.font-bold              {  font-weight:bold  !important;}
