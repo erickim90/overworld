@@ -32,26 +32,26 @@
 }
 /*IMAGES*/
 .eck-card-portrait-image{
-    background:url('./images/profile_portrait.jpg');
+    background:url('../images/profile_portrait.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
 }
 .eck-card-ladb-logo-image{
-    background:url('./images/ladb_logo_small.png');
+    background:url('../images/ladb_logo_small.png');
     background-color:#000000;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
 }
 .eck-card-screeningnow-logo-image{
-    background:url('./images/screeningnow_logo.png');
+    background:url('../images/screeningnow_logo.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
 }
 .eck-card-neybortalk-logo-image{
-    background:url('./images/neybortalk_logo.png');
+    background:url('../images/neybortalk_logo.png');
     background-color:#9632fa;
     background-size: 150px;
     background-repeat: no-repeat;
@@ -59,21 +59,21 @@
     background-position-y: center;
 }
 .eck-card-naya-logo-image{
-    background:url('./images/naya_logo.png');
+    background:url('../images/naya_logo.png');
     background-size: 175px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
 }
 .eck-card-notary-logo-image{
-    background:url('./images/notarycam_logo.png');
+    background:url('../images/notarycam_logo.png');
     background-size: 250px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
 }
 .eck-card-portal-logo-image{
-    background:url('./images/portal_logo.png');
+    background:url('../images/portal_logo.png');
     background-size: 250px;
     background-repeat: no-repeat;
     background-position-x: center;
