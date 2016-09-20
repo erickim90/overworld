@@ -1,6 +1,5 @@
 /*My Profile*/
 .eck-card-profile-image, .eck-card-wide-image{
-    height:250px;
     width:100%;
 }
 .eck-experience-list{
@@ -34,10 +33,9 @@
 /*IMAGES*/
 .eck-card-portrait-image{
     background:url('./images/profile_portrait.jpg');
-    background-size: 275px;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: center;
+    background-size: cover;
 }
 .eck-card-ladb-logo-image{
     background:url('./images/ladb_logo_small.png');
