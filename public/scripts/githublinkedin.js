@@ -62,8 +62,31 @@
             }
         };
 
-        var tech = getUrlParameter('code');
-        var blog = getUrlParameter('state');
-        console.log(tech, blog)
+        var linkedInAuth = getUrlParameter('code');
+        console.log(linkedInAuth);
+            var authObj = {
+                grant_type:'authorization_code',
+                code:linkedInAuth,
+                redirect_uri'https://erickim90.github.io/overworld/githublinkedin.html',
+                client_id:'75x30wo62mthj4',
+                client_secret:'clma06lUbAJrEqGe'
+            };
+        if(linkedInAuth !== undefined){
+            $.post( "https://www.linkedin.com/oauth/v2/accessToken", authObj, function(data) {
+                console.log(data)
+            })
+                .done(function() {
+                    console.log( "Finished AJAX call" );
+                })
+                .fail(function() {
+                    alert( "There was an error" );
+                })
+                .always(function() {
+                    console.log( "Done" );
+                });
+        }
+        else{
+            console.log('No Permission')
+        }
     });
 })();
