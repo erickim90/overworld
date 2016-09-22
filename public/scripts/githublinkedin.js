@@ -79,7 +79,7 @@
                 data: authObj,
                 type: 'POST',
                 crossDomain: true,
-                dataType: 'jsonp',
+                dataType: 'json',
                 success: function(data) { alert("Success");console.log(data) },
                 error: function(data) { alert('Failed!');console.log(data) }
             });
