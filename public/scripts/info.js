@@ -46,41 +46,5 @@
             .always(function() {
                 console.log( "Done" );
             });
-
-        var getUrlParameter = function getUrlParameter(sParam) {
-            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
-
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : sParameterName[1];
-                }
-            }
-        };
-
-        var linkedInAuth = getUrlParameter('code');
-        console.log(linkedInAuth);
-            var authObj = {
-                grant_type:'authorization_code',
-                code:linkedInAuth,
-                redirect_uri:'https://erickim90.github.io/overworld/githublinkedin.html',
-                client_id:'75x30wo62mthj4',
-                client_secret:'clma06lUbAJrEqGe'
-            };
-        if(linkedInAuth !== undefined){
-
-            $.post('https://cors.io/?https://www.linkedin.com/oauth/v2/accessToken', authObj, function(response) {
-                console.log(response)
-            }, 'json');
-
-
-        }
-        else{
-            console.log('No Permission')
-        }
     });
 })();
