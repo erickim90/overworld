@@ -81,8 +81,7 @@
                 crossDomain: true,
                 dataType: 'jsonp',
                 success: function(data) { alert("Success");console.log(data) },
-                error: function(data) { alert('Failed!');console.log(data) },
-                beforeSend: setHeader
+                error: function(data) { alert('Failed!');console.log(data) }
             });
         }
         else{
