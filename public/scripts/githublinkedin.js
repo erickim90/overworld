@@ -73,16 +73,11 @@
             };
         if(linkedInAuth !== undefined){
 
+            $.post('https://www.linkedin.com/oauth/v2/accessToken', authObj, function(response) {
+                console.log(response)
+            }, 'json');
 
-            $.ajax({
-                url: 'https://www.linkedin.com/oauth/v2/accessToken',
-                data: authObj,
-                type: 'POST',
-                crossDomain: true,
-                dataType: 'json',
-                success: function(data) { alert("Success");console.log(data) },
-                error: function(data) { alert('Failed!');console.log(data) }
-            });
+
         }
         else{
             console.log('No Permission')
