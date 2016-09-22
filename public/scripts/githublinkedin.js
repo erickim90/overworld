@@ -73,10 +73,10 @@
             };
         if(linkedInAuth !== undefined){
 
-            $.post('http://cors.io/?https://www.linkedin.com/oauth/v2/accessToken', authObj, function(response) {
+            $.post('https://cors.io/?https://www.linkedin.com/oauth/v2/accessToken', authObj, function(response) {
                 console.log(response)
             }, 'json');
-            
+
 
         }
         else{
