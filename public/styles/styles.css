@@ -2,7 +2,7 @@
 .eck-card-profile-image, .eck-card-wide-image{
     width:100%;
 }
-.eck-experience-list{
+.eck-experience-list, .eck-github-list{
     padding-top:0;
     padding-bottom:0;
     min-height:30px;
@@ -33,6 +33,18 @@
 /*GITHUB PAGE*/
 #eck-github-profile{
     border-radius:5px;
+}
+.eck-loading-spinner{
+    margin-top:50px;
+}
+.eck-github-icons{
+    padding-right:10px;
+    width:25px;
+}
+/*Contact Form*/
+.eck-contact-form, .eck-contact-info{
+    max-width: 550px;
+    margin: auto;
 }
 /*IMAGES*/
 .eck-card-portrait-image{

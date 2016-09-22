@@ -43,10 +43,62 @@
     <!--Main Body-->
     <main class="mdl-layout__content">
         <div class="mdl-grid mdl-grid-width">
-            Contact
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--order-1-phone mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__title">
+                    <h3 class="margin-top-0 margin-bottom-0">Contact</h3>
+                </div>
+                <div class="mdl-card__media">
+                    <a href="#">
+                        <img src="./public/images/portal_wide.jpg" class="width-percent-100 eck-card-wide-image">
+                    </a>
+                </div>
+                <div class="mdl-card__supporting-text eck-contact-info">
+                    <span>Thanks for visiting! Feel free to contact me at anytime about any questions or inquiries you may have. I'll answer in a swift and timely manner so go ahead ask me anything!
+                    </span>
+                </div>
+                <div class="mdl-card__actions eck-contact-form">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-percent-100 text-color-black">
+                            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"  type="text" id="name">
+                            <label class="mdl-textfield__label text-color-black" for="name">Name</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-percent-100 text-color-black">
+                            <input class="mdl-textfield__input" type="email" id="email">
+                            <label class="mdl-textfield__label text-color-black" for="email">Company <span class="text-color-mdl-grey">(optional)</span></label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-percent-100 text-color-black">
+                            <textarea class="mdl-textfield__input" rows="5" id="note"></textarea>
+                            <label class="mdl-textfield__label text-color-black" for="note">Leave a message...</label>
+                        </div>
+                    </form>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        Send
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
 </div>
 <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
 </html>
+<!--<form action="#" class="">-->
+    <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label is-upgraded" data-upgraded=",MaterialTextfield">-->
+        <!--<input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">-->
+        <!--<label class="mdl-textfield__label" for="Name">Name...</label>-->
+        <!--<span class="mdl-textfield__error">Letters and spaces only</span>-->
+    <!--</div>-->
+    <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label is-upgraded" data-upgraded=",MaterialTextfield">-->
+        <!--<input class="mdl-textfield__input" type="text" id="Email">-->
+        <!--<label class="mdl-textfield__label" for="Email">Email...</label>-->
+    <!--</div>-->
+    <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label is-upgraded" data-upgraded=",MaterialTextfield">-->
+        <!--<textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>-->
+        <!--<label class="mdl-textfield__label" for="note">Enter note</label>-->
+    <!--</div>-->
+    <!--<p>-->
+        <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent" type="submit" data-upgraded=",MaterialButton,MaterialRipple">-->
+            <!--Submit-->
+            <!--<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>-->
+    <!--</p>-->
+<!--</form>-->

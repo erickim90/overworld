@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-blue.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/libs/font-awesome-4.6.3/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./public/styles/styles_global.css" />
     <link rel="stylesheet" href="./public/styles/styles.css" />
@@ -42,16 +44,24 @@
         </nav>
     </div>
     <!--Main Body-->
-    <main class="mdl-layout__content">
+    <div  id="loadingDiv" class="margin-auto eck-loading-spinner">
+        <i class="fa fa-spinner fa-spin fa-3x fa-fw "></i>
+        <span class="sr-only">Loading...</span>
+    </div>
+
+
+    <main id="loadingGithub" class="mdl-layout__content display-none">
         <div class="mdl-grid mdl-grid-width-1000">
-            <div id="eck-github-profile" class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+            <div id="eck-github-profile" class="mdl-cell mdl-cell--3-col mdl-cell--5-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--4dp">
+
             </div>
-            <div class="mdl-cell mdl-cell--9-col mdl-card">
+            <div class="mdl-cell mdl-cell--9-col mdl-card mdl-cell--hide-tablet mdl-cell--hide-phone">
                 <div class="mdl-card__actions">
                     <div class="calendar margin-0 width-percent-100"></div>
                 </div>
-                <div class="mdl-grid portfolio-copy">
-
+            </div>
+            <div class="mdl-cell mdl-cell--3-col-tablet mdl-card mdl-cell--hide-desktop mdl-cell--hide-phone">
+                <div class="mdl-card__actions eck-moveable-profile-info">
                 </div>
             </div>
         </div>
@@ -59,6 +69,7 @@
 </div>
 <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 <script src="./public/scripts/info.js"></script>
 </body>
 </html>
