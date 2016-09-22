@@ -30,6 +30,10 @@
     color:rgb(255,255,255);
     background-color: rgba(0,0,0,.85);
 }
+/*GITHUB PAGE*/
+#eck-github-profile{
+    border-radius:5px;
+}
 /*IMAGES*/
 .eck-card-portrait-image{
     background:url('../images/profile_portrait.jpg');

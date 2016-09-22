@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-blue.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
 
     <link rel="stylesheet" href="./public/styles/styles_global.css" />
     <link rel="stylesheet" href="./public/styles/styles_images.css" />
@@ -26,8 +27,7 @@
             <nav class="mdl-navigation">
                 <div class="mdl-layout-spacer"></div>
                 <a class="mdl-navigation__link" href="./index.html">Home</a>
-                <a class="mdl-navigation__link eck-is-active" href="./github.html">Github</a>
-                <a class="mdl-navigation__link" href="./linkedin.html">LinkedIn</a>
+                <a class="mdl-navigation__link eck-is-active" href="./githublinkedin.html">Github / LinkedIn</a>
                 <a class="mdl-navigation__link" href="./contact.html">Contact</a>
             </nav>
         </div>
@@ -37,20 +37,28 @@
         <span class="mdl-layout__title">Overworld</span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="./index.html">Home</a>
-            <a class="mdl-navigation__link eck-is-active" href="./github.html">Github</a>
-            <a class="mdl-navigation__link" href="./linkedin.html">LinkedIn</a>
+            <a class="mdl-navigation__link eck-is-active" href="./githublinkedin.html">Github / LinkedIn</a>
             <a class="mdl-navigation__link" href="./contact.html">Contact</a>
         </nav>
     </div>
     <!--Main Body-->
     <main class="mdl-layout__content">
-        <div class="mdl-grid mdl-grid-width">
-            <h3>Embedded Playlist Public HTML</h3>
-            <div id="iframe"></div>
+        <div class="mdl-grid mdl-grid-width-1000">
+            <div id="eck-github-profile" class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+            </div>
+            <div class="mdl-cell mdl-cell--9-col mdl-card">
+                <div class="mdl-card__actions">
+                    <div class="calendar margin-0 width-percent-100"></div>
+                </div>
+                <div class="mdl-grid portfolio-copy">
+
+                </div>
+            </div>
         </div>
     </main>
 </div>
 <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-<script src="./public/scripts/github.js"></script>
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+<script src="./public/scripts/githublinkedin.js"></script>
 </body>
 </html>
