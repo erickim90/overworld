@@ -67,7 +67,7 @@
             var authObj = {
                 grant_type:'authorization_code',
                 code:linkedInAuth,
-                redirect_uri'https://erickim90.github.io/overworld/githublinkedin.html',
+                redirect_uri:'https://erickim90.github.io/overworld/githublinkedin.html',
                 client_id:'75x30wo62mthj4',
                 client_secret:'clma06lUbAJrEqGe'
             };
