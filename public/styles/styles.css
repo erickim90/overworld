@@ -16,6 +16,9 @@
 .eck-company-tabs{
     cursor: pointer;
 }
+.eck-company-info{
+    padding-left: 20px;
+}
 /*PROJECTS IVE WORKED ON*/
 .eck-transparent-overlay{
     opacity:0;
@@ -45,6 +48,9 @@
 .eck-contact-form, .eck-contact-info{
     max-width: 550px;
     margin: auto;
+}
+#email-invalid{
+    color:red;
 }
 /*IMAGES*/
 .eck-card-portrait-image{

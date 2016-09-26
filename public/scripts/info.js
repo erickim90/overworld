@@ -85,9 +85,6 @@
         // .done(function() {})
             .fail(function() {alert( "There was an error" );});
         // .always(function() {});
-
-
-
     });
 })();
 

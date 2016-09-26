@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-blue.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./public/libs/font-awesome-4.6.3/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./public/styles/styles_global.css" />
     <link rel="stylesheet" href="./public/styles/styles.css" />
@@ -42,7 +43,7 @@
     </div>
     <!--Main Body-->
     <main class="mdl-layout__content">
-        <div class="mdl-grid mdl-grid-width">
+        <div class="mdl-grid mdl-grid-width-contact">
             <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--order-1-phone mdl-card mdl-shadow--4dp">
                 <div class="mdl-card__title">
                     <h3 class="margin-top-0 margin-bottom-0">Contact</h3>
@@ -53,52 +54,71 @@
                     </a>
                 </div>
                 <div class="mdl-card__supporting-text eck-contact-info">
-                    <span>Thanks for visiting! Feel free to contact me at anytime about any questions or inquiries you may have. I'll answer in a swift and timely manner so go ahead ask me anything!
+                    <span>Thanks for visiting! Feel free to contact me at anytime about any questions or inquiries. I'll answer in a swift and timely manner so go ahead, ask me anything!
                     </span>
                 </div>
                 <div class="mdl-card__actions eck-contact-form">
-                    <form action="#">
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzgSDGpdIk5MIh8lxYMXIEqo0KHNIfjcw6-DGEZTEFvAML-1LT6/exec  ">
+                        <!-- change the form action to your script url -->
+
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-percent-100 text-color-black">
-                            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"  type="text" id="name">
+                            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"  type="text" id="name" name="name">
                             <label class="mdl-textfield__label text-color-black" for="name">Name</label>
                         </div>
+
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-percent-100 text-color-black">
-                            <input class="mdl-textfield__input" type="email" id="email">
-                            <label class="mdl-textfield__label text-color-black" for="email">Company <span class="text-color-mdl-grey">(optional)</span></label>
+                            <input class="mdl-textfield__input" type="text" id="company" name="company">
+                            <label class="mdl-textfield__label text-color-black" for="company">Company <span class="text-color-mdl-grey">(optional)</span></label>
                         </div>
+
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-percent-100 text-color-black">
-                            <textarea class="mdl-textfield__input" rows="5" id="note"></textarea>
-                            <label class="mdl-textfield__label text-color-black" for="note">Leave a message...</label>
+                            <input class="mdl-textfield__input" type="email" id="email" name="email">
+                            <label class="mdl-textfield__label text-color-black" for="email">Email</label>
                         </div>
+
+                        <div id="email-invalid" style="visibility:hidden">
+                            Must be a valid email address
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-percent-100 text-color-black">
+                            <textarea class="mdl-textfield__input" rows="4" id="message" name="message"></textarea>
+                            <label class="mdl-textfield__label text-color-black" for="message">Leave a message...</label>
+                        </div>
+
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                            <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
                     </form>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                        Send
-                    </button>
+                    <!--<form action="#">-->
+                        <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label width-percent-100 text-color-black">-->
+                            <!--<input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"  type="text" id="name">-->
+                            <!--<label class="mdl-textfield__label text-color-black" for="name">Name</label>-->
+                        <!--</div>-->
+                        <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label width-percent-100 text-color-black">-->
+                            <!--<input class="mdl-textfield__input" type="email" id="email">-->
+                            <!--<label class="mdl-textfield__label text-color-black" for="email">Email</label>-->
+                        <!--</div>-->
+                        <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label width-percent-100 text-color-black">-->
+                            <!--<input class="mdl-textfield__input" type="email" id="company">-->
+                            <!--<label class="mdl-textfield__label text-color-black" for="company">Company <span class="text-color-mdl-grey">(optional)</span></label>-->
+                        <!--</div>-->
+                        <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label width-percent-100 text-color-black">-->
+                            <!--<textarea class="mdl-textfield__input" rows="4" id="note"></textarea>-->
+                            <!--<label class="mdl-textfield__label text-color-black" for="note">Leave a message...</label>-->
+                        <!--</div>-->
+                    <!--</form>-->
+                    <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">-->
+                        <!--Send-->
+                    <!--</button>-->
+                </div>
+                <div style="display:none;" id="thankyou_message">
+                    <h2><em>Thanks</em> for contacting us!
+                        We will get back to you soon!</h2>
                 </div>
             </div>
         </div>
     </main>
 </div>
 <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<script type="text/javascript" src="./public/scripts/form-submission-handler.js"></script>
 </body>
 </html>
-<!--<form action="#" class="">-->
-    <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label is-upgraded" data-upgraded=",MaterialTextfield">-->
-        <!--<input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">-->
-        <!--<label class="mdl-textfield__label" for="Name">Name...</label>-->
-        <!--<span class="mdl-textfield__error">Letters and spaces only</span>-->
-    <!--</div>-->
-    <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label is-upgraded" data-upgraded=",MaterialTextfield">-->
-        <!--<input class="mdl-textfield__input" type="text" id="Email">-->
-        <!--<label class="mdl-textfield__label" for="Email">Email...</label>-->
-    <!--</div>-->
-    <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label is-upgraded" data-upgraded=",MaterialTextfield">-->
-        <!--<textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>-->
-        <!--<label class="mdl-textfield__label" for="note">Enter note</label>-->
-    <!--</div>-->
-    <!--<p>-->
-        <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent" type="submit" data-upgraded=",MaterialButton,MaterialRipple">-->
-            <!--Submit-->
-            <!--<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>-->
-    <!--</p>-->
-<!--</form>-->
