@@ -68,10 +68,9 @@
             pdf.getPage(1).then(function(page) {
                 var scale = 1.5;
                 var viewport = page.getViewport(scale);
-                console.log(viewport)
-
-                var canvas = document.getElementById('the-canvas');
+                var canvas = document.getElementById('pdf-canvas');
                 var context = canvas.getContext('2d');
+
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
