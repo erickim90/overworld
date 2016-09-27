@@ -29,6 +29,29 @@
         //Hide content and show spinner on page load
         var loadingSpinner = $('#loadingDiv');
         var $loadingGithub = $('#loadingGithub');
+        var githubProfile  = $( "#eck-github-profile" );
+        var githubCalendar = $( "#eck-github-calendar" );
+        var hideResumeBtn  = $( "#hide-resume" );
+        var showResumeBtn  = $( "#show-resume" );
+        var pdfCanvas      = $( "#pdf-canvas" );
+
+        hideResumeBtn.hide();
+        pdfCanvas.hide();
+
+        showResumeBtn.click(function() {
+            githubProfile.slideUp( "fast");
+            githubCalendar.slideUp( "fast");
+            pdfCanvas.slideDown("slow");
+            showResumeBtn.hide();
+            hideResumeBtn.show();
+        });
+        hideResumeBtn.click(function() {
+            githubProfile.slideDown( "fast");
+            githubCalendar.slideDown( "fast");
+            pdfCanvas.slideUp("slow");
+            showResumeBtn.show();
+            hideResumeBtn.hide();
+        });
 
         //Show content and hide spinner on ajax complete
         $(document)
@@ -39,6 +62,26 @@
                 loadingSpinner.hide();
                 $loadingGithub.show();
             });
+
+        //Load Resume Through PDF.JS and hide it
+        PDFJS.getDocument('./public/documents/Eric_Kim_Resume_20160926.pdf').then(function(pdf) {
+            pdf.getPage(1).then(function(page) {
+                var scale = 1.5;
+                var viewport = page.getViewport(scale);
+                console.log(viewport)
+
+                var canvas = document.getElementById('the-canvas');
+                var context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+            });
+        });
 
         // custom library for github calendar
         // https://github.com/IonicaBizau/github-calendar
@@ -79,8 +122,6 @@
                 +'<i class="fa fa-clock-o eck-github-icons" aria-hidden="true"></i>' + 'Joined '+moment(data.created_at).format('MMM DD YYYY')
                 +'</span> </li> </ul> </div>'
             )
-
-
         })
         // .done(function() {})
             .fail(function() {alert( "There was an error" );});

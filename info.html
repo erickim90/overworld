@@ -51,25 +51,33 @@
 
 
     <main id="loadingGithub" class="mdl-layout__content display-none">
-        <div class="mdl-grid mdl-grid-width-info">
-            <div id="eck-github-profile" class="mdl-cell mdl-cell--3-col mdl-cell--5-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--4dp">
 
-            </div>
-            <div class="mdl-cell mdl-cell--9-col mdl-card mdl-cell--hide-tablet mdl-cell--hide-phone">
+        <div class="mdl-grid mdl-grid-width-info">
+
+            <div id="eck-github-profile" class="mdl-cell mdl-cell--3-col mdl-cell--5-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--4dp"></div>
+            <div id="eck-github-calendar" class="mdl-cell mdl-cell--9-col mdl-card mdl-cell--hide-tablet mdl-cell--hide-phone">
                 <div class="mdl-card__actions">
                     <div class="calendar margin-0 width-percent-100"></div>
                 </div>
-            </div>
-            <div class="mdl-cell mdl-cell--3-col-tablet mdl-card mdl-cell--hide-desktop mdl-cell--hide-phone">
-                <div class="mdl-card__actions eck-moveable-profile-info">
+                <div class="mdl-card__actions">
+                    <span id="show-resume"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Show Resume</button></span>
                 </div>
             </div>
+            <span id="hide-resume"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Hide Resume</button></span>
+
+            <canvas id="pdf-canvas"></canvas>
+
         </div>
+
+
     </main>
 </div>
 <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+
+<script src="./public/libs/pdf.js"></script>
 <script src="./public/scripts/info.js"></script>
+
 </body>
 </html>

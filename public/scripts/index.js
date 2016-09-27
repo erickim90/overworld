@@ -23,13 +23,12 @@
     }
 
     jqueryReady(function ($) {
-        var bpl = $('#bluepandalabs');
-        var bpl_small = $('#bluepandalabs > small');
-        var portal = $('#theportal');
-        var portal_small = $('#theportal > small');
-        var k5 = $('#k5');
-        var k5_small = $('#k5 > small');
-        var company_info_p = $( '.eck-company-info > p'  );
+        var bpl            = $('#bluepandalabs');
+        var bpl_small      = $('#bluepandalabs > small');
+        var portal         = $('#theportal');
+        var portal_small   = $('#theportal > small');
+        var k5             = $('#k5');
+        var k5_small       = $('#k5 > small');
 
             bpl.click(function(){
                 bpl_small.addClass("eck-is-active");
